@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0y6pypnsin66"]
+
+[ext_resource type="Script" path="res://MyLevel.gd" id="1_h81u6"]
+[ext_resource type="Texture2D" uid="uid://idwptbn1en3x" path="res://smile.png" id="2_m0gul"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mq8oq"]
+
+[node name="MyLevel" type="MyLevel"]
+script = ExtResource("1_h81u6")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.92889)
+current = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_mq8oq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.975396, 0.12934, -0.178531, 0, 0.809816, 0.586683, 0.220459, -0.572249, 0.789892, 0, 0, 3.09492)
+
+[node name="Smile" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+texture_filter = 0
+texture = ExtResource("2_m0gul")
