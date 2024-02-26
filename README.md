@@ -18,8 +18,9 @@ You must have a godot project where you import your resources, they must have be
 
 Export the `MyGame.pck` file of your resources, in the same way Godot would when exporting your project. See `pack` in [Makefile](./Makefile)
 
+**IMPORTANT!**: update the makefile with the path to _your_ Godot 4 executable
 ```bash
-"$(GODOT4)" --headless --path ./MyProject --export-pack Packer ../Sources/MyGame/Resources/MyGame.pck
+path/to/godot4 --headless --path ./MyProject --export-pack Packer ../Sources/MyGame/Resources/MyGame.pck
 ```
 
 Include this `MyGame.pck` resource in your `.executableTarget` using `.copy`. See [Package.swift](./Package.swift)
