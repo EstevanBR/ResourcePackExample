@@ -14,6 +14,7 @@ guard let myFirstLevelPackedScene: PackedScene = GD.load(path: "res://my_first_l
 ## Overview
 
 You must have a godot project where you import your resources, they must have been imported at least once. See [MyProject/](./MyProject/)
+
 ![Godot Project Filesystem](./img/filesystem.png)
 
 Export the `MyGame.pck` file of your resources, in the same way Godot would when exporting your project. See `pack` in [Makefile](./Makefile)
