@@ -18,7 +18,7 @@ deploy:
 
 pack:
 	echo "create MyGame.pck in MyGame/Resources/MyGame.pck"
-	"$(GODOT4)" --headless --path ./MyProject --export-pack Packer ../Sources/MyGame/Resources/MyGame.pck
+	path/to/godot4 --headless --path ./MyProject --export-pack Packer ../Sources/MyGame/Resources/MyGame.pck
 
 run:
 	swift run MyGame
